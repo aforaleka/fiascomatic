@@ -4,3 +4,19 @@
 % Aleka Cheung, Christopher Li, Philip Lan
 %
 
+% Relations
+
+
+
+
+% Needs
+
+
+
+
+% Locations
+
+
+
+
+% Objects
