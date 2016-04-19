@@ -5,8 +5,36 @@
 %
 
 % Relations
+symmetric(roommates).
+implies(relationship(X, roommates, _),\+role(X, professor)).
+implies(relationship(_, roommates, Y),\+role(Y, professor)).
+roles_relation(drug_dealer/drug_user).
+implies(relationship(X, roommates, _),(role(X, professor);role(X,student))).
+implies(relationship(_, roommates, Y),(role(Y, professor);role(Y,student))).
+roles_relation(ta/student).
+roles_relation(professor/student).
+subrole(ta,student).
+conflicting_roles(professor, student).
+conflicting_roles(professor, ta).
 
+symmetric(awkward_one_night_stand).
+symmetric(hookup_buddies).
+symmetric(deeply_in_love).
+symmetric(open_relationship).
+symmetric(in_same_dance_group).
+symmetric(secretly_married).
+symmetric(cheating_partners_for_classes).
+implies(relationship(X, cheating_partners_for_classes, _), role(X, student)).
+implies(relationship(_, cheating_partners_for_classes, Y), role(Y, student)).
 
+%% In Rival Frats/Sororities
+symmetric(competing_for_same_internship).
+implies(relationship(X, competing_for_same_internship, _),
+	role(X,student)).
+implies(relationship(_, competing_for_same_internship, Y),
+	role(Y,student)).
+symmetric(contenders_for_same_heart).
+symmetric(best_frineds).
 
 
 % Needs
@@ -65,10 +93,10 @@ role_location(student,backroom_of_a_Starbucks).
 location(gym_bathroom).
 role_location(student,fraternity_Quad).
 role_location(ta,fraternity_Quad).
-role_location(student,inside_mom’s_car).
-role_location(ta,inside_mom’s_car).
+role_location(student,inside_mom_s_car).
+role_location(ta,inside_mom_s_car).
 location(toilets_stall_with_no_toilet_paper).
-location(unknown_person’s_bedroom).
+location(unknown_person_s_bedroom).
 location(burger_King).
 
 
