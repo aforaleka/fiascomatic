@@ -3,7 +3,7 @@
 %
 % Aleka Cheung, Christopher Li, Philip Lan
 %
-:- discontiguous symmetric/1, implies/2, roles_relation/1, need/1, contradiction/2, role_need/2, role_location/2, location/1, object/1, role_object/2, left_unique/1, right_unique/1.
+:- discontiguous symmetric/1, implies/2, roles_relation/1, need/1, contradiction/2, role_need/2, role_location/2, location/1, object/1, role_object/2.
 
 
 % Relations
