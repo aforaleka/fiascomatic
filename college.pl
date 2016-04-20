@@ -8,8 +8,8 @@
 
 % Relations
 symmetric(roommates).
-implies(relationship(X, roommates, _),\+role(X, professor)).
-implies(relationship(_, roommates, Y),\+role(Y, professor)).
+contradiction(relationship(X, roommates, _),(X, professor)).
+contradiction(relationship(_, roommates, Y),(Y, professor)).
 roles_relation(drug_dealer/drug_user).
 implies(relationship(X, roommates, _),(role(X, professor);role(X,student))).
 implies(relationship(_, roommates, Y),(role(Y, professor);role(Y,student))).
