@@ -3,6 +3,8 @@
 %
 % Aleka Cheung, Christopher Li, Philip Lan
 %
+:- discontiguous symmetric/1, implies/2, roles_relation/1, need/1, contradiction/2, role_need/2, role_location/2, location/1, object/1, role_object/2.
+
 
 % Relations
 symmetric(roommates).
@@ -69,14 +71,14 @@ contradiction(needs(C, blackmail_ex),
 			role(C, professor)).
 
 role_need(student, get_revenge_on_TA).
-role_need(studnet, pass_the_exam).
+contradiction(needs(C, get_revenge_on_TA),
+			role(C, ta)).
+role_need(student, pass_the_exam).
 role_need(student, sell_weed_to_pay_for_tuition).
 
 % Needs for professor/TA only
-need(fail_straight_A_student).
-contradiction(needs(C, fail_straight_A_student),
-			role(C, student)).
-
+role_need(ta, fail_straight_A_student).
+role_need(professor, fail_straight_A_student).
 
 
 
