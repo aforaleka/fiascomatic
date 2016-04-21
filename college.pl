@@ -1,7 +1,9 @@
 %
-% Fiasco Playset: College Life
+% Fiasco Playset: College Daze
+% Fiasco Description: A typical day in the life of a college student filled with stories of love, competition and occasionally drugs.
 %
 % Aleka Cheung, Christopher Li, Philip Lan
+% ahc493, cfl407, psl463
 %
 :- discontiguous symmetric/1, implies/2, roles_relation/1, need/1, contradiction/2, role_need/2, role_location/2, location/1, object/1, role_object/2, left_unique/1, right_unique/1.
 
